@@ -43,7 +43,7 @@ public class WebFlowConfig {
     public FlowDefinitionRegistry flowRegistry(FlowBuilderServices builderServices) {
         return new FlowDefinitionRegistryBuilder(applicationContext, builderServices)
                 .setBasePath("classpath:/flows")
-                .addFlowLocation("simple-flow.xml", "simpleFlow")
+                .addFlowLocation("simple-flow.xml", "download-csv")
                 .build();
     }
 
